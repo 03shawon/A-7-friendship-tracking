@@ -1,21 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-
-
+import Home from "./pages/Home";
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/timeline" element={<Timeline />} />
-          <Route path="/stats" element={<Stats />} />
-          <Route path="/friend/:id" element={<Details />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* অন্য রাউটগুলো এখানে থাকবে */}
+      </Routes>
     </Router>
   );
 }
