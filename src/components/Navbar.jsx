@@ -20,46 +20,22 @@ const Navbar = () => {
                         </svg>
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-2">
-                        <li>
-                            <NavLink to="/" className={linkStyles}>
-                                <Home size={18} /> Home
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/timeline" className={linkStyles}>
-                                <Clock size={18} /> Timeline
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/stats" className={linkStyles}>
-                                <BarChart3 size={18} /> Stats
-                            </NavLink>
-                        </li>
+                        <li><NavLink to="/" className={linkStyles}><Home size={18} /> Home</NavLink></li>
+                        <li><NavLink to="/timeline" className={linkStyles}><Clock size={18} /> Timeline</NavLink></li>
+                        <li><NavLink to="/stats" className={linkStyles}><BarChart3 size={18} /> Stats</NavLink></li>
                     </ul>
                 </div>
                 <NavLink to="/" className="flex items-center gap-1 cursor-pointer no-underline">
                     <span className="text-2xl font-bold text-[#1F2937]">Keen</span>
-                    <span className="text-2xl font-bold text-[#244D3F]">Keeper</span>
+                    <span className="text-2xl font-bold text-[#1B3C35]">Keeper</span>
                 </NavLink>
             </div>
 
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-2">
-                    <li>
-                        <NavLink to="/" className={linkStyles}>
-                            <Home size={18} /> Home
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/timeline" className={linkStyles}>
-                            <Clock size={18} /> Timeline
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/stats" className={linkStyles}>
-                            <BarChart3 size={18} /> Stats
-                        </NavLink>
-                    </li>
+                    <li><NavLink to="/" className={linkStyles}><Home size={18} /> Home</NavLink></li>
+                    <li><NavLink to="/timeline" className={linkStyles}><Clock size={18} /> Timeline</NavLink></li>
+                    <li><NavLink to="/stats" className={linkStyles}><BarChart3 size={18} /> Stats</NavLink></li>
                 </ul>
             </div>
         </div>

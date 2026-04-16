@@ -8,7 +8,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* অন্য রাউটগুলো এখানে থাকবে */}
       </Routes>
     </Router>
   );
