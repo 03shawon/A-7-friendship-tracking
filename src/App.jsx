@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import FriendDetails from "./pages/FriendDetails"; 
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <main className="flex-grow"> 
           <Routes>
             <Route path="/" element={<Home />} />
-           
+            <Route path="/friend/:id" element={<FriendDetails />} />
           </Routes>
         </main>
 
