@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "name": "Naimul Islam",
+    "picture": "https://i.pravatar.cc/150?img=1",
+    "email": "naimul.dev@gmail.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Expert in Flutter and mobile apps.",
+    "goal": 7,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Nowrin Akter",
+    "picture": "https://i.pravatar.cc/150?img=2",
+    "email": "nowrin.design@yahoo.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["university", "design"],
+    "bio": "A talented UI/UX designer.",
+    "goal": 14,
+    "next_due_date": "2026-04-29"
+  },
+  {
+    "id": 3,
+    "name": "Bulbul Ahamed",
+    "picture": "https://i.pravatar.cc/150?img=3",
+    "email": "bulbul.cse@su.edu.bd",
+    "days_since_contact": 28,
+    "status": "overdue",
+    "tags": ["mentor", "reference"],
+    "bio": "Provides great career guidance.",
+    "goal": 30,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 4,
+    "name": "Ariful Haque",
+    "picture": "https://i.pravatar.cc/150?img=4",
+    "email": "arif.haque@outlook.com",
+    "days_since_contact": 6,
+    "status": "almost due",
+    "tags": ["school friend", "cricket"],
+    "bio": "Childhood friend and cricket lover.",
+    "goal": 7,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 5,
+    "name": "Tanvir Mahtab",
+    "picture": "https://i.pravatar.cc/150?img=5",
+    "email": "tanvir.m@gmail.com",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["office", "colleague"],
+    "bio": "Senior developer in fintech.",
+    "goal": 5,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 6,
+    "name": "Sadia Afrin",
+    "picture": "https://i.pravatar.cc/150?img=6",
+    "email": "sadia.a@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["travel", "photographer"],
+    "bio": "Loves travel and photography.",
+    "goal": 15,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 7,
+    "name": "Fahim Shahriar",
+    "picture": "https://i.pravatar.cc/150?img=7",
+    "email": "fahim.s@live.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["gaming", "childhood"],
+    "bio": "Hardcore gamer and streamer.",
+    "goal": 30,
+    "next_due_date": "2026-03-20"
+  },
+  {
+    "id": 8,
+    "name": "Mehedi Hasan",
+    "picture": "https://i.pravatar.cc/150?img=8",
+    "email": "mehedi.h@gmail.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["neighbor", "gym"],
+    "bio": "Gym partner and motivator.",
+    "goal": 10,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 9,
+    "name": "Zubair Ahmed",
+    "picture": "https://i.pravatar.cc/150?img=9",
+    "email": "zubair.a@tech.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["coworker", "coding"],
+    "bio": "Problem solver and coder.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 10,
+    "name": "Anika Tabassum",
+    "picture": "https://i.pravatar.cc/150?img=10",
+    "email": "anika.t@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["cousin", "family"],
+    "bio": "Loves exploring new food spots.",
+    "goal": 15,
+    "next_due_date": "2026-04-12"
+  }
+
+]
