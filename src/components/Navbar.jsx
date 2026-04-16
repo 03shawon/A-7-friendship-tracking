@@ -1,12 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Home, Clock, BarChart3 } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
     const linkStyles = ({ isActive }) =>
         `flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
             isActive 
-            ? "bg-[#1B3C35] text-white shadow-md" 
+            ? "bg-[#244D3F] text-white shadow-md" 
             : "text-gray-600 hover:bg-gray-100"
         }`;
 
@@ -25,14 +26,14 @@ const Navbar = () => {
                         <li><NavLink to="/stats" className={linkStyles}><BarChart3 size={18} /> Stats</NavLink></li>
                     </ul>
                 </div>
-                <NavLink to="/" className="flex items-center gap-1 cursor-pointer no-underline">
-                    <span className="text-2xl font-bold text-[#1F2937]">Keen</span>
-                    <span className="text-2xl font-bold text-[#1B3C35]">Keeper</span>
+
+                <NavLink to="/" className="flex items-center gap-2 cursor-pointer no-underline">
+                    <img src={logo} alt="KeenKeeper Logo" className="h-8 md:h-10 w-auto" /> 
                 </NavLink>
             </div>
 
             <div className="navbar-end hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 gap-2">
+                <ul className="menu menu-horizontal px-1 gap-4">
                     <li><NavLink to="/" className={linkStyles}><Home size={18} /> Home</NavLink></li>
                     <li><NavLink to="/timeline" className={linkStyles}><Clock size={18} /> Timeline</NavLink></li>
                     <li><NavLink to="/stats" className={linkStyles}><BarChart3 size={18} /> Stats</NavLink></li>
