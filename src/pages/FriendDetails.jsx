@@ -31,7 +31,7 @@ const FriendDetails = () => {
         const existingEntries = JSON.parse(localStorage.getItem('timeline')) || [];
         localStorage.setItem('timeline', JSON.stringify([newEntry, ...existingEntries]));
         
-        toast.success(`${type} recorded!`, {
+        toast.success(`${type} with ${friend.name}`, {
             style: { 
                 border: '1px solid #244D3F', 
                 padding: '16px', 
