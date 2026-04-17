@@ -27,4 +27,4 @@ Storage: LocalStorage for data persistence
 ⏰ Interaction Tracking & Status: Automatically calculates "Days Since Contact" and compares it against your personal "Connection Goal" to show if your relationship is "On-Track" or "Overdue".
 
 
-Live Link : 
+Live Link : https://friendship-tracking.netlify.app/
