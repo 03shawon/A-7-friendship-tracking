@@ -1,16 +1,30 @@
-# React + Vite
+📱 KeenKeeper
+KeenKeeper is a personal relationship management platform designed to help users maintain meaningful connections with their friends and loved ones. By tracking the time since the last contact, it ensures you never lose touch with the people who matter most.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📝 Project Description
+In a busy world, it is easy to forget the last time we reached out to a friend. KeenKeeper solves this by providing a centralized dashboard to log interactions, set connection goals, and visualize relationship health through data analytics.
 
-Currently, two official plugins are available:
+🚀 Technologies Used
+This project is built using a modern tech stack for a fast and responsive user experience:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Frontend: React.js (Vite)
 
-## React Compiler
+Styling: Tailwind CSS & DaisyUI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Data Visualization: Recharts
 
-## Expanding the ESLint configuration
+Routing: React Router DOM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Notifications: React Hot Toast
+
+Storage: LocalStorage for data persistence
+
+🌟 Key Features
+📊 Friendship Analytics: Features a dynamic Pie Chart (Donut style) that visualizes the distribution of your interactions—Calls, Texts, and Videos—to see how you connect most.
+
+🔍 Advanced Timeline Filtering: A dedicated timeline page that logs every interaction with a friend, allowing you to filter by "Call", "Text", or "Video" to quickly review your history.
+
+⏰ Interaction Tracking & Status: Automatically calculates "Days Since Contact" and compares it against your personal "Connection Goal" to show if your relationship is "On-Track" or "Overdue".
+
+
+Live Link : 

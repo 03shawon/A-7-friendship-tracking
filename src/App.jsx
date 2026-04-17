@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import FriendDetails from "./pages/FriendDetails"; 
 import Timeline from "./pages/TimeLine";
 import NotFound from "./pages/NotFound";
+import Stats from "./pages/Stats";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/friend/:id" element={<FriendDetails />} />
             <Route path="/timeline" element={<Timeline />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/stats" element={<Stats />} />
           </Routes>
         </main>
 
