@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import FriendDetails from "./pages/FriendDetails"; 
+import Timeline from "./pages/TimeLine";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/friend/:id" element={<FriendDetails />} />
+            <Route path="/timeline" element={<Timeline />} />
           </Routes>
         </main>
 

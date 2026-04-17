@@ -19,24 +19,36 @@ const FriendDetails = () => {
     }, [id]);
 
     const handleCheckIn = (type) => {
+        if (!friend) return;
+
         const newEntry = {
+            id: Date.now(),
             date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
-            title: `${type} with ${friend.name}`
+            title: `${type} with ${friend.name}`,
+            type: type.toLowerCase()
         };
         
-        console.log("New Timeline Entry:", newEntry);
+        const existingEntries = JSON.parse(localStorage.getItem('timeline')) || [];
+        localStorage.setItem('timeline', JSON.stringify([newEntry, ...existingEntries]));
         
         toast.success(`${type} recorded!`, {
-            style: { border: '1px solid #244D3F', padding: '16px', color: '#244D3F' },
+            style: { 
+                border: '1px solid #244D3F', 
+                padding: '16px', 
+                color: '#244D3F',
+                borderRadius: '12px',
+                fontWeight: 'bold'
+            },
             iconTheme: { primary: '#244D3F', secondary: '#FFFAEE' },
         });
     };
 
-    if (!friend) return <div className="text-center py-20">Loading...</div>;
+    if (!friend) return <div className="text-center py-20 font-bold text-gray-500 italic">Loading...</div>;
 
     return (
         <div className="bg-[#F9FAFB] min-h-screen pb-20">
-            <Toaster position="top-center" />
+            <Toaster position="top-center" reverseOrder={false} />
+            
             <div className="container mx-auto px-4 py-8">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                     
@@ -57,8 +69,8 @@ const FriendDetails = () => {
                         </div>
 
                         <div className="space-y-3">
-                            <button className="w-full py-3 bg-white border border-gray-100 rounded-xl text-sm font-bold text-gray-700 hover:bg-green-100 transition-all flex items-center justify-center gap-2">⏰ Snooze 2 Weeks</button>
-                            <button className="w-full py-3 bg-white border border-gray-100 rounded-xl text-sm font-bold text-gray-700 hover:bg-blue-100 transition-all flex items-center justify-center gap-2">📦 Archive</button>
+                            <button className="w-full py-3 bg-white border border-gray-100 rounded-xl text-sm font-bold text-gray-700 hover:bg-green-50 transition-all flex items-center justify-center gap-2">⏰ Snooze 2 Weeks</button>
+                            <button className="w-full py-3 bg-white border border-gray-100 rounded-xl text-sm font-bold text-gray-700 hover:bg-blue-50 transition-all flex items-center justify-center gap-2">📦 Archive</button>
                             <button className="w-full py-3 bg-white border border-red-100 rounded-xl text-sm font-bold text-red-500 hover:bg-red-50 transition-all flex items-center justify-center gap-2">🗑️ Delete</button>
                         </div>
                     </div>
@@ -90,15 +102,15 @@ const FriendDetails = () => {
                         <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm">
                             <h4 className="text-sm font-bold text-gray-800 mb-6 uppercase tracking-wider">Quick Check-In</h4>
                             <div className="grid grid-cols-3 gap-4">
-                                <button onClick={() => handleCheckIn('Call')} className="flex flex-col items-center gap-3 p-6 bg-gray-50 rounded-2xl hover:bg-green-50 transition-all group">
+                                <button onClick={() => handleCheckIn('Call')} className="flex flex-col items-center gap-3 p-6 bg-gray-50 rounded-2xl hover:bg-green-50 transition-all group active:scale-95">
                                     <img src={callIcon} alt="Call" className="w-8 h-8 opacity-70 group-hover:opacity-100" />
                                     <span className="text-xs font-bold text-gray-600">Call</span>
                                 </button>
-                                <button onClick={() => handleCheckIn('Text')} className="flex flex-col items-center gap-3 p-6 bg-gray-50 rounded-2xl hover:bg-green-50 transition-all group">
+                                <button onClick={() => handleCheckIn('Text')} className="flex flex-col items-center gap-3 p-6 bg-gray-50 rounded-2xl hover:bg-green-50 transition-all group active:scale-95">
                                     <img src={textIcon} alt="Text" className="w-8 h-8 opacity-70 group-hover:opacity-100" />
                                     <span className="text-xs font-bold text-gray-600">Text</span>
                                 </button>
-                                <button onClick={() => handleCheckIn('Video')} className="flex flex-col items-center gap-3 p-6 bg-gray-50 rounded-2xl hover:bg-green-50 transition-all group">
+                                <button onClick={() => handleCheckIn('Video')} className="flex flex-col items-center gap-3 p-6 bg-gray-50 rounded-2xl hover:bg-green-50 transition-all group active:scale-95">
                                     <img src={videoIcon} alt="Video" className="w-8 h-8 opacity-70 group-hover:opacity-100" />
                                     <span className="text-xs font-bold text-gray-600">Video</span>
                                 </button>
